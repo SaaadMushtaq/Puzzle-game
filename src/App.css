@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+ overscroll-behavior: none;
+ overflow: hidden;
+}
+
+img{
+  display: none;
+}
+
+.appContainer{
+  max-width: 450px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+} 
+
+
+
+.mainContainer{
+  background: linear-gradient(to bottom, #33ccff 0%, #3366cc 100%);
+  width: 100%;
+  height: 100%;
+   overflow: hidden;  
+   overscroll-behavior: none;
+   display: flex;
+   justify-content: center;
+   position: relative;
+}
+
+#menuItems{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 5vmin;
+  border: 1vmin #0065c8 solid;
+  font-size: 7vmin;
+  color: #0065c8;
+  z-index: 1000;
+}
+
+.topButtons{
+  width: 500px;
+  height: fit-content;
+  position: absolute;
+  justify-content: center;
+  padding: 0;
+}
+
+
+button{
+  font-size: 5vmin;
+  padding: 7px 20px;
+  background-color: #3aa0f1;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #0065c8;
+}
+
+
+button.startAgainBtn{
+  background-color: white;
+  color: #0065c8;
+  font-family: 'Silkscreen',cursive;
+  font-size: 14px;
+  margin-top: 20px;
+  padding: 7px 20px;
+}
+
+button.newGameBtn{
+  
+  background-color: white;
+  color: #0065c8;
+  font-family: 'Silkscreen',cursive;
+  font-size: 14px;
+  padding: 7px 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+button.newGameBtn:hover, button.startAgainBtn:hover{
+  background-color: #0065c8;
+  color: white;
+}
+
+select{
+  font-size: 4vmin;
+  color: #0065c8;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 1vmin;
+}
+
+.modal{
+  min-height: 150px;
+  text-align: center;
+  color: #2c85c9;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Silkscreen', cursive;
+  background-color: white;
+  padding: 10px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.modal span{
+  font-weight: normal;
+}
+
+.uploadFile{
+  position: absolute;
+  top: 50px;
+  left: 20%;
+  transform: translate(-20%);
+}
+
+.chooseFile {
+  display: none;
+}
+label {
+  color: white;
+  background-color: #3aa0f1;
+  border-radius: 10px;
+  font-size: 2.5vmin;
+  padding: 2vmin 3vmin;
+  width: 90%;
+  text-align: center;
+  cursor: pointer;
+}
+label:hover {
+  background-color: #2c85c9;
+}
+
